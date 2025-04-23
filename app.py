@@ -86,15 +86,15 @@ with st.sidebar:
     
     # Show explanation of current leniency level
     if grading_leniency <= 2:
-        st.warning("🔍 **Very Strict**: Will deeply analyze the essay, focus on weaknesses, and be extremely critical.")
+        st.warning("🔍 **Very Strict**: ChatGPT straight up Dick mode. It will murder your essay.")
     elif grading_leniency <= 4:
-        st.info("🔎 **Strict**: Will maintain high standards with limited top grades.")
+        st.info("🔎 **Strict**: ChatGPT will maintain high standards and be super strict with limited top grades.")
     elif grading_leniency <= 6:
         st.info("⚖️ **Balanced**: Will evaluate objectively using the full scoring range.")
     elif grading_leniency <= 8:
-        st.success("🌟 **Lenient**: Will add 5-15% to scores and focus more on strengths than weaknesses.")
+        st.success("🌟 **Lenient**: Will add some leniency to scores and focus more on strengths than weaknesses.")
     else:
-        st.success("✨ **Very Lenient**: Will add 15-25% to scores, primarily focus on positives, and rarely give low grades.")
+        st.success("✨ **Very Lenient**: Will add a lot of leniency to scores, primarily focus on positives, and rarely give low grades.")
     
     # Assignment instructions text area
     st.subheader("Assignment Instructions")
